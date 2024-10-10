@@ -1,5 +1,6 @@
 {
   "workspace": {
     "members": ["apps/api", "apps/visualizer"]
-  }
+  },
+  "nodeModulesDir": "auto"
 }
