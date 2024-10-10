@@ -3,4 +3,5 @@
   "deno.disablePaths": [
     "./apps/visualizer"
   ],
+  "editor.defaultFormatter": "denoland.vscode-deno"
 }

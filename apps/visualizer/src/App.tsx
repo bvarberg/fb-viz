@@ -135,7 +135,7 @@ export default function App() {
                 />
               );
             default:
-              return null
+              return null;
           }
         })}
       </svg>
