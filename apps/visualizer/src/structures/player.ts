@@ -1,11 +1,11 @@
 import { z } from "zod";
 
-export const PlayerID = z.string();
-export type PlayerID = z.infer<typeof PlayerID>;
+export const ZPlayerID = z.string();
+export type PlayerID = z.infer<typeof ZPlayerID>;
 
-export const Player = z.object({
-  id: PlayerID,
+export const ZPlayer = z.object({
+  id: ZPlayerID,
   type: z.literal("player"),
   name: z.string(),
 });
-export type Player = z.infer<typeof Player>;
+export type Player = z.infer<typeof ZPlayer>;

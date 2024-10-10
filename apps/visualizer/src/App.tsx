@@ -1,9 +1,9 @@
 import { hierarchy, pack } from "d3-hierarchy";
 
 import { leagueFactory } from "./factories/league";
-import type { League } from "./structures/league";
-import type { Team } from "./structures/team";
-import type { Player } from "./structures/player";
+import { type League } from "./structures/league";
+import { type Team } from "./structures/team";
+import { type Player } from "./structures/player";
 
 type FBDatum = League | Team | Player;
 

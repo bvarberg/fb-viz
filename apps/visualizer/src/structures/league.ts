@@ -1,13 +1,13 @@
 import { z } from "zod";
-import { Team } from "./team";
+import { ZTeam } from "./team";
 
-export const LeagueID = z.string();
-export type LeagueID = z.infer<typeof LeagueID>;
+export const ZLeagueID = z.string();
+export type LeagueID = z.infer<typeof ZLeagueID>;
 
-export const League = z.object({
-  id: LeagueID,
+export const ZLeague = z.object({
+  id: ZLeagueID,
   type: z.literal("league"),
   name: z.string(),
-  teams: z.array(Team),
+  teams: z.array(ZTeam),
 });
-export type League = z.infer<typeof League>;
+export type League = z.infer<typeof ZLeague>;

@@ -1,4 +1,4 @@
-import type { League } from "./structures/league";
+import { type League } from "./structures/league";
 
 export const epl: League = {
   id: "epl",

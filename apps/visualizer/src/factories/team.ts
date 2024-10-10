@@ -1,7 +1,7 @@
 import { faker } from "@faker-js/faker";
 import { Factory } from "fishery";
 
-import type { Team } from "../structures/team";
+import { type Team } from "../structures/team";
 import { playerFactory } from "./player";
 
 export const teamFactory = Factory.define<Team>(
