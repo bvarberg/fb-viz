@@ -16,6 +16,7 @@
     "jsr:@std/path@1": "1.0.6",
     "npm:@chromatic-com/storybook@^1.9.0": "1.9.0_react@18.3.1",
     "npm:@eslint/js@^9.11.1": "9.12.0",
+    "npm:@faker-js/faker@^9.0.3": "9.0.3",
     "npm:@storybook/addon-essentials@^8.3.5": "8.3.5_storybook@8.3.5",
     "npm:@storybook/addon-interactions@^8.3.5": "8.3.5_storybook@8.3.5",
     "npm:@storybook/addon-links@^8.3.5": "8.3.5_react@18.3.1_storybook@8.3.5",
@@ -410,6 +411,9 @@
       "dependencies": [
         "levn"
       ]
+    },
+    "@faker-js/faker@9.0.3": {
+      "integrity": "sha512-lWrrK4QNlFSU+13PL9jMbMKLJYXDFu3tQfayBsMXX7KL/GiQeqfB1CzHkqD5UHBUtPAuPo6XwGbMFNdVMZObRA=="
     },
     "@humanfs/core@0.19.0": {
       "integrity": "sha512-2cbWIHbZVEweE853g8jymffCA+NCMiuqeECeBBLm8dg2oFdjuGJhgN4UAbI+6v0CKbbhvtXA4qV8YR5Ji86nmw=="
@@ -3294,6 +3298,7 @@
           "dependencies": [
             "npm:@chromatic-com/storybook@^1.9.0",
             "npm:@eslint/js@^9.11.1",
+            "npm:@faker-js/faker@^9.0.3",
             "npm:@storybook/addon-essentials@^8.3.5",
             "npm:@storybook/addon-interactions@^8.3.5",
             "npm:@storybook/addon-links@^8.3.5",
