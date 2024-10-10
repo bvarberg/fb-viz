@@ -1,64 +1,14 @@
 import { hierarchy, pack } from "d3-hierarchy";
 
-interface Player {
-  id: string;
-  type: "player";
-  name: string;
-}
-
-interface Team {
-  id: string;
-  type: "team";
-  name: string;
-  players: Array<Player>;
-}
-
-interface League {
-  id: string;
-  type: "league";
-  name: string;
-  teams: Array<Team>;
-}
+import { leagueFactory } from "./factories/league";
+import type { League } from "./structures/league";
+import type { Team } from "./structures/team";
+import type { Player } from "./structures/player";
 
 type FBDatum = League | Team | Player;
 
 export default function App() {
-  const data: League = {
-    id: "epl",
-    type: "league",
-    name: "English Premier League",
-    teams: [
-      {
-        id: "TOT",
-        type: "team",
-        name: "Tottenham Hotspur",
-        players: [
-          {
-            id: "37",
-            type: "player",
-            name: "Micky van de Ven",
-          },
-          {
-            id: "7",
-            type: "player",
-            name: "Son Heung-Min",
-          },
-        ],
-      },
-      {
-        id: "CHE",
-        type: "team",
-        name: "Chelsea",
-        players: [
-          {
-            id: "11",
-            type: "player",
-            name: "Noni Madueke",
-          },
-        ],
-      },
-    ],
-  };
+  const data = leagueFactory.build();
 
   const root = hierarchy<FBDatum>(data, function childrenAccessor(datum) {
     switch (datum.type) {
